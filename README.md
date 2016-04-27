@@ -1,0 +1,1 @@
+POC for a generic MIDIMessage generator

@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<script type="text/javascript" src="src/midimessage.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var g = new JSMM.Generator(new CUSTOM.WaldorfM2MidiMessage());
+
+			// Example custom SysEx
+			console.log(g.SysEx('SNDR', {device: 0x01, locationData: 'ALL'}));
+
+			// Example channel message
+			console.log(g.ChannelMessage('NoteOn', {note:60, velocity:70}));
+
+			// Example on midi "driver" channel message
+			console.log(g.mm.NoteOn({note:60, velocity:70}));
+
+			// Example on midi "driver" custom message
+			console.log(g.mm.SNDR({device: 0x01, locationData: 'ALL'}))
+		</script>
+	</body>
+</html>
