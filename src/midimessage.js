@@ -99,7 +99,7 @@
 
     };
 
-    CUSTOM.WaldorfM2MidiMessage.prototype = Object.create(JSMM.CommonMIDIMessage.prototype); // See note below
+    CUSTOM.WaldorfM2MidiMessage.prototype = Object.create(JSMM.CommonMIDIMessage.prototype);
 
     CUSTOM.WaldorfM2MidiMessage.prototype.constructor = CUSTOM.WaldorfM2MidiMessage;
 
